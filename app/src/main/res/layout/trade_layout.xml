@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.commonui.widget.APRelativeLayout android:id="@id/trade_outter" android:background="@drawable/list_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.commonui.widget.APImageView android:id="@id/trade_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/trade_icon" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <com.alipay.mobile.commonui.widget.APTextView android:textSize="16.0sp" android:textColor="@color/stock_personal_title_color" android:gravity="left" android:id="@id/trade_title" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/trade_icon" android:layout_centerVertical="true" />
+    <com.alipay.mobile.commonui.widget.APImageView android:id="@id/trade_arrow_icon" android:layout_width="8.0dip" android:layout_height="13.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/personal_arrow" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <com.alipay.mobile.commonui.widget.APTextView android:textSize="14.0sp" android:textColor="@color/stock_personal_desc_color" android:gravity="right" android:id="@id/trade_desc" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/trade_arrow_icon" android:layout_centerVertical="true" />
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</com.alipay.mobile.commonui.widget.APRelativeLayout>

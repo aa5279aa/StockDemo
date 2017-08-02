@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="vertical" android:background="#fff1f6f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.alipay.mobile.ui">
+    <com.alipay.mobile.commonui.widget.APPullRefreshView android:id="@id/pull_refresh_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.alipay.mobile.stock.component.mysticky.StickyHeaderListViewLayout android:id="@id/list_box" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.alipay.mobile.stock.component.MultiScrollListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+        </com.alipay.mobile.stock.component.mysticky.StickyHeaderListViewLayout>
+    </com.alipay.mobile.commonui.widget.APPullRefreshView>
+</com.alipay.mobile.commonui.widget.APLinearLayout>

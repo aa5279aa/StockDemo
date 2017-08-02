@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.commonui.widget.APLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ma_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="33.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.commonui.widget.APView android:id="@id/ma5_icon" android:background="@drawable/ma5_bg" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="3.0dip" />
+    <com.alipay.mobile.stock.component.AutoResizeTextView android:textSize="10.0sp" android:textColor="@color/header_sub_menu_color" android:gravity="center|left" android:id="@id/ma5_value" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" />
+    <com.alipay.mobile.commonui.widget.APView android:id="@id/ma10_icon" android:background="@drawable/ma10_bg" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="3.0dip" />
+    <com.alipay.mobile.stock.component.AutoResizeTextView android:textSize="10.0sp" android:textColor="@color/header_sub_menu_color" android:id="@id/ma10_value" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" />
+    <com.alipay.mobile.commonui.widget.APView android:id="@id/ma20_icon" android:background="@drawable/ma20_bg" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="3.0dip" />
+    <com.alipay.mobile.stock.component.AutoResizeTextView android:textSize="10.0sp" android:textColor="@color/header_sub_menu_color" android:id="@id/ma20_value" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+</com.alipay.mobile.commonui.widget.APLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_box" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:RoundAngleImageView="http://schemas.android.com/apk/res/com.alipay.mobile.ui">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.alipay.mobile.commonui.widget.APRoundAngleImageView android:id="@id/item_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/default_icon" android:scaleType="centerCrop" RoundAngleImageView:roundHeight="15.0dip" RoundAngleImageView:roundWidth="15.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/stock_suspend_bg" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

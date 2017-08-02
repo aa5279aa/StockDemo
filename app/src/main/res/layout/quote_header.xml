@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.stock.component.QuotationHeaderView android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/stock_detail_header_paddingleft" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.commonui.widget.APTextView android:textSize="@dimen/stock_detail_stock_price_textsize" android:textColor="@color/stock_detail_status_draw" android:gravity="center_vertical" android:id="@id/stock_price" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stock_default_null_value" android:includeFontPadding="false" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/right_layout" android:paddingLeft="18.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.alipay.mobile.commonui.widget.APLinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/stock_jump_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.alipay.mobile.commonui.widget.APTextView android:textColor="@color/stock_detail_status_draw" android:id="@id/stock_jump_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stock_default_null_value" android:singleLine="true" android:includeFontPadding="false" />
+            <com.alipay.mobile.commonui.widget.APTextView android:textColor="@color/stock_titlebar_second_title_color" android:id="@id/stock_jump_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/stock_default_null_value" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/stock_jump_price" />
+        </com.alipay.mobile.commonui.widget.APLinearLayout>
+        <com.alipay.mobile.commonui.widget.APTextView android:textSize="20.0sp" android:textColor="@color/stock_detail_status_draw" android:id="@id/invalid_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+    </LinearLayout>
+</com.alipay.mobile.stock.component.QuotationHeaderView>

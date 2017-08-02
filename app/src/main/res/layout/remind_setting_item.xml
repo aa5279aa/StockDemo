@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.commonui.widget.APInputBox android:layout_width="fill_parent" android:layout_height="wrap_content" app:inputName="" app:inputType="0x2002"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.alipay.mobile.ui" />

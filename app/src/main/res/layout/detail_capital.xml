@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.commonui.widget.APFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="290.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.alipay.mobile.commonui.widget.APRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.alipay.mobile.swalle.chart.PieChartView android:id="@id/pie_chart" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.alipay.mobile.commonui.widget.APLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="86.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="7.0sp" android:textColor="@color/stock_titlebar_main_title_color" android:id="@id/inner_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/stock_titlebar_main_title_color" android:id="@id/inner_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+                <TextView android:textSize="7.0sp" android:textColor="@color/stock_titlebar_main_title_color" android:id="@id/inner_third" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.alipay.mobile.commonui.widget.APLinearLayout>
+        </com.alipay.mobile.commonui.widget.APRelativeLayout>
+        <com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="horizontal" android:id="@id/v_data_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </com.alipay.mobile.commonui.widget.APLinearLayout>
+    <include android:id="@id/stock_loading_layout" layout="@layout/detail_content_loading" />
+</com.alipay.mobile.commonui.widget.APFrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="vertical" android:id="@id/box" android:background="@color/stock_asset_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.alipay.mobile.ui">
+    <com.alipay.mobile.commonui.widget.APTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showGenericButton="true" app:titleText="" />
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@id/stock_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:maxWidth="100.0dip" />
+        <TextView android:id="@id/stock_price_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <TextView android:id="@id/stock_price_change_ratio" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.alipay.mobile.commonui.widget.APRadioTableView android:id="@id/radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" app:bgType="0x4" app:left_text="" app:show_togglebutton="true" />
+</com.alipay.mobile.commonui.widget.APLinearLayout>
