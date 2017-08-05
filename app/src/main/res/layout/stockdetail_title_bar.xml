@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="48dip"
-    android:background="#415264">
+    android:background="#1d2228">
 
     <LinearLayout
         android:id="@+id/back_btn"
@@ -44,7 +44,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginRight="15dp"
-            android:src="@drawable/search" />
+            android:src="@drawable/stock_search" />
 
         <ImageView
             android:layout_width="32dp"
@@ -66,8 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="自选"
-            android:textColor="#ffffff"
-            android:textSize="16sp" />
+            android:textAppearance="@style/text_16_ffffff" />
 
     </RelativeLayout>
 
