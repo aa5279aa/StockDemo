@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="vertical" android:background="@color/stock_item_selector_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.commonui.widget.APFlowTipView android:id="@id/bottom_flowtip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.alipay.mobile.commonui.widget.APLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/content_box" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <com.alipay.mobile.commonui.widget.APTextView android:textSize="14.599976sp" android:textColor="@color/stock_agreement_text" android:ellipsize="end" android:id="@id/stock_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:singleLine="true" />
-        <com.alipay.mobile.commonui.widget.APImageView android:layout_gravity="center_vertical" android:id="@id/stock_tip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/agreement_tip_icon" />
-    </com.alipay.mobile.commonui.widget.APLinearLayout>
-</com.alipay.mobile.commonui.widget.APLinearLayout>

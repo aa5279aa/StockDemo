@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res/com.alipay.mobile.ui">
-    <com.alipay.mobile.commonui.widget.APTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showGenericButton="false" />
-    <com.alipay.mobile.commonui.widget.APView android:id="@id/split_line" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-    <android.support.v4.view.ViewPager android:id="@id/view_page" android:background="@color/stock_default_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</com.alipay.mobile.commonui.widget.APLinearLayout>

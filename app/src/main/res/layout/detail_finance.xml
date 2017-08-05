@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.commonui.widget.APFrameLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="290.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.commonui.widget.APLinearLayout android:orientation="vertical" android:id="@id/container" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <include android:id="@id/empty_box" layout="@layout/detail_empty" />
-    <include android:id="@id/stock_loading_layout" layout="@layout/detail_content_loading" />
-</com.alipay.mobile.commonui.widget.APFrameLayout>

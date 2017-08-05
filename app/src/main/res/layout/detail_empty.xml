@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.alipay.mobile.commonui.widget.APFrameLayout android:orientation="vertical" android:id="@id/empty_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.alipay.mobile.commonui.widget.APTextView android:textSize="13.299988sp" android:textColor="@color/stock_titlebar_second_title_color" android:layout_gravity="center" android:id="@id/empty_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无数据" />
-</com.alipay.mobile.commonui.widget.APFrameLayout>

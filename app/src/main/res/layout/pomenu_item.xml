@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/stock_detail_bottom_popup_selector" android:layout_width="fill_parent" android:layout_height="48.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/item_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
-    <TextView android:textSize="14.599976dip" android:textColor="@color/stock_titlebar_main_title_color" android:id="@id/item_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/item_icon" android:layout_centerVertical="true" />
-</RelativeLayout>
