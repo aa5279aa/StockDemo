@@ -10,8 +10,8 @@ public class StockViewModel implements Cloneable {
 
 
     public String mStockName = "";
-    public String mPirce = "";
-    public String mPriceUS = "";//当前价格，美元
+    public String mStockPirce = "";
+    public String mStockPriceUS = "";//当前价格，美元
     public String mStockCode = "";//股票代码
     public String mStockType = "";//股票类型 美股orA股
     public String mStockSubType = "";//股票类型， 沪主板/深主板/创业板/中小板

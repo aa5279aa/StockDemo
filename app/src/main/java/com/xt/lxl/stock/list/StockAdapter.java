@@ -99,7 +99,7 @@ public class StockAdapter extends BaseAdapter {
         String defaultStr = "数据缺失";
         HotelViewHolder.showTextOrDefault(stockName, stockViewModel.mStockName, defaultStr);
         HotelViewHolder.showTextOrDefault(stockCode, stockViewModel.mStockCode, defaultStr);
-        HotelViewHolder.showTextOrDefault(stockPrice, stockViewModel.mPirce, defaultStr);
+        HotelViewHolder.showTextOrDefault(stockPrice, stockViewModel.mStockPirce, defaultStr);
         HotelViewHolder.showTextOrDefault(stockChange, DataShowUtil.getDisplayChangeStr(stockViewModel.mStockChange), defaultStr);
 
         //展示涨跌幅背景色

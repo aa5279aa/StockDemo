@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="添加股票"
+        android:text="+添加股票"
         android:textAppearance="@style/text_14_ffffff" />
 
     <TextView

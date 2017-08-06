@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
+import com.xt.lxl.stock.page.StockItemEditActivity;
 import com.xt.lxl.stock.page.StockListActivity;
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
@@ -14,9 +15,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stock_main_layout);
         findViewById(R.id.xt_go_stock_list).setOnClickListener(this);
+        findViewById(R.id.xt_go_stock_edit).setOnClickListener(this);
         findViewById(R.id.xt_go_user_center).setOnClickListener(this);
         findViewById(R.id.xt_go_stock_detail).setOnClickListener(this);
-
     }
 
     @Override
@@ -34,8 +35,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         } else if (id == R.id.xt_go_stock_detail) {
 
+        } else if (id == R.id.xt_go_stock_edit) {
+            intent.setClass(this, StockItemEditActivity.class);
         }
-//        mComponent
         if (intent.getComponent() == null) return;
         startActivity(intent);
     }
