@@ -49,6 +49,7 @@ public class StockItemEditActivity extends Activity implements View.OnClickListe
     }
 
     private void initListener() {
+        mBackIcon.setOnClickListener(this);
         mStockEdit.setInputListener(new StockEditableBar.IgetInputContentListener() {
             @Override
             public void getInput(String inputString) {
@@ -82,7 +83,8 @@ public class StockItemEditActivity extends Activity implements View.OnClickListe
 
     private void initData() {
         //空
-        mSaveList = DataSource.getSaveStockCodeList(this);
+        mSaveList.clear();
+        mSaveList.addAll(DataSource.getSaveStockCodeList(this));
     }
 
     private void assoStockByCode(final String code) {
@@ -90,6 +92,7 @@ public class StockItemEditActivity extends Activity implements View.OnClickListe
             @Override
             public void run() {
                 StockViewModel stockViewModel = StockSender.requestStockModelByCode(code);
+                stockList.clear();
                 stockList.add(stockViewModel);
                 mHandler.post(new Runnable() {
                     @Override
@@ -110,7 +113,7 @@ public class StockItemEditActivity extends Activity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if (id == mBackIcon.getId()) {
+        if (id == R.id.back_btn) {
             finish();
         }
     }

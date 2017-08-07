@@ -3,6 +3,7 @@ package com.xt.lxl.stock.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.xt.lxl.stock.config.StockConfig;
 import com.xt.lxl.stock.model.StockViewModel;
 
 import java.util.ArrayList;
@@ -53,13 +54,14 @@ public class DataSource {
     }
 
     public static List<String> getSaveStockCodeList(Context context) {
-        SharedPreferences codeList = context.getSharedPreferences("stock", 0);
-        String codeListStr = codeList.getString("codeList", "");
+        SharedPreferences codeList = context.getSharedPreferences(StockConfig.STOCK_SAVE_DB_NAME, 0);
+        String codeListStr = codeList.getString(StockConfig.STOCK_SAVE_DATA_NAME, "");
         if (StringUtil.emptyOrNull(codeListStr)) {
             return new ArrayList<>();
         }
         if (codeListStr.endsWith(",")) {
-            codeListStr = codeListStr.substring(0, codeListStr.length() - 2);
+            String substring = codeListStr.substring(0, codeListStr.length() - 1);
+            codeListStr = substring;
         }
         String[] split = codeListStr.split(",");
         return Arrays.asList(split);
@@ -67,11 +69,11 @@ public class DataSource {
 
     public static boolean addStockCode(Context context, String code) {
         List<String> list = new ArrayList<>();
-        SharedPreferences codeList = context.getSharedPreferences("stock", 0);
-        String codeListStr = codeList.getString("codeList", "");
+        SharedPreferences codeList = context.getSharedPreferences(StockConfig.STOCK_SAVE_DB_NAME, 0);
+        String codeListStr = codeList.getString(StockConfig.STOCK_SAVE_DATA_NAME, "");
         if (!StringUtil.emptyOrNull(codeListStr)) {
             if (codeListStr.endsWith(",")) {
-                codeListStr = codeListStr.substring(0, codeListStr.length() - 2);
+                codeListStr = codeListStr.substring(0, codeListStr.length() - 1);
             }
             String[] split = codeListStr.split(",");
             list.addAll(Arrays.asList(split));
@@ -82,7 +84,7 @@ public class DataSource {
             builder.append(str);
             builder.append(",");
         }
-        return codeList.edit().putString("codeList", builder.toString()).commit();
+        return codeList.edit().putString(StockConfig.STOCK_SAVE_DATA_NAME, builder.toString()).commit();
     }
 
 }

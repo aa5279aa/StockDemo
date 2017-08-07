@@ -41,12 +41,14 @@
         android:paddingRight="10dp">
 
         <ImageView
+            android:id="@+id/stock_list_search"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginRight="15dp"
             android:src="@drawable/stock_search" />
 
         <ImageView
+            android:id="@+id/stock_list_edit"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/stock_more_icon" />

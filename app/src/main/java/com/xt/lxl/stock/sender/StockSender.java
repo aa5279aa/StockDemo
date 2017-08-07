@@ -37,9 +37,13 @@ public class StockSender {
         int second = stockInfo.indexOf("\"", first + 1);
         String substring = stockInfo.substring(first + 1, second);
         String[] split = substring.split(",");
+        if (split.length < 5) {
+            return stockViewModel;
+        }
         String stockName = split[0];
         String stockyestodayPrice = split[2];
         String stockPrice = split[3];
+
 
         double stockPriceD = Double.parseDouble(stockPrice);
         double stockyestodayPriceD = Double.parseDouble(stockyestodayPrice);
@@ -47,8 +51,15 @@ public class StockSender {
         stockViewModel.mStockName = stockName;
         stockViewModel.mStockCode = code;
         stockViewModel.mStockPirce = stockPrice;
-        stockViewModel.mStockType = "China";
+        stockViewModel.mStockType = StockViewModel.STOCK_TYPE_CHINA;
         stockViewModel.mStockChange = (stockPriceD - stockyestodayPriceD) / stockyestodayPriceD;
+        if (stockPriceD == 0 && stockyestodayPriceD > 0) {
+            stockViewModel.mStockState = StockViewModel.STOCK_STATE_SUSPENSION;
+            stockViewModel.mStockPirce = stockyestodayPrice;
+        } else {
+            stockViewModel.mStockState = StockViewModel.STOCK_STATE_NORMAL;
+        }
+
         return stockViewModel;
     }
 
